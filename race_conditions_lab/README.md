@@ -4,7 +4,11 @@ This lab is part of the [SEED Labs](http://www.cis.syr.edu/~wedu/seed/).
 
 Refer to the [lab webpage](http://www.cis.syr.edu/~wedu/seed/Labs_12.04/Software/Race_Condition/) for full details.
 
-Needed Files: [Description](http://www.cis.syr.edu/~wedu/seed/Labs_12.04/Software/Race_Condition/Race_Condition.pdf), [`vulp.c`](http://www.cis.syr.edu/~wedu/seed/Labs_12.04/Software/Race_Condition/files/vulp.c), [`check.sh`](http://www.cis.syr.edu/~wedu/seed/Labs_12.04/Software/Race_Condition/files/check.sh)
+Needed Files (3): 
+
+- [Description](http://www.cis.syr.edu/~wedu/seed/Labs_12.04/Software/Race_Condition/Race_Condition.pdf)
+- [`vulp.c`](http://www.cis.syr.edu/~wedu/seed/Labs_12.04/Software/Race_Condition/files/vulp.c)
+- [`check.sh`](http://www.cis.syr.edu/~wedu/seed/Labs_12.04/Software/Race_Condition/files/check.sh)
 
 # Tips
 
