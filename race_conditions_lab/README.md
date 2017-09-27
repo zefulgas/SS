@@ -15,6 +15,10 @@ Needed Files (3):
 - Do not forget to compile with the correct permissions
 
 		gcc vulp.c -o vulp && sudo chown root vulp && sudo chmod +s vulp
+		
+- Do not forget to disable the protection against race conditions
+
+		sudo sysctl -w kernel.yama.protected_sticky_symlinks=0
 
 - Are you creating the correct symbolic link? Try 
 
@@ -25,3 +29,5 @@ and see if the expected file is being written.
 - You may want to try first your script without trying to win the race. File `attack-v0.sh` sleeps for 3 seconds to give you a vulnerability window between the TOC and TOU. This one is easier to defeat.
 
 - Notice that if the program `vuln` writes on `/tmp/XYZ` while it has no link to another file then there is no way to win the race. The file `/tmp/XYZ` will then be owned by `root` and you can no longer link it anywhere.
+
+- Although it is possible to do it with a VM with a single-core, some students reported that they were only able to succeed when having 2-cores assigned to the VM. You may want to give it a try.
