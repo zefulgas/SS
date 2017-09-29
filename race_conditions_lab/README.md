@@ -19,14 +19,18 @@ Needed Files (3):
 - Do not forget to disable the protection against race conditions
 
 		sudo sysctl -w kernel.yama.protected_sticky_symlinks=0
+		
+Do not forget to add to `vulp.c`
+
+		#include <string.h>
+		
+- You may want to try first your script without trying to win the race. File `vulp-v0.c` sleeps for 3 seconds to give you a vulnerability window between the TOC and TOU. This one is easier to defeat.
 
 - Are you creating the correct symbolic link? Try 
 
 		echo "hello" > /tmp/XYZ
 
 and see if the expected file is being written.
-
-- You may want to try first your script without trying to win the race. File `vulp-v0.c` sleeps for 3 seconds to give you a vulnerability window between the TOC and TOU. This one is easier to defeat.
 
 - Notice that if the program `vuln` writes on `/tmp/XYZ` while it has no link to another file then there is no way to win the race. The file `/tmp/XYZ` will then be owned by `root` and you can no longer link it anywhere.
 
