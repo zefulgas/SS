@@ -3,6 +3,8 @@
 clear
 
 sudo apt-get -y -q update
+echo "********** INSTALLING Git **********"
+sudo apt-get install -y -q git
 echo "********** INSTALLING GDB-Peda **********"
 cd ~/
 git clone https://github.com/longld/peda.git ~/bin/peda

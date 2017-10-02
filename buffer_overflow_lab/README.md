@@ -12,3 +12,11 @@ Needed Files (4):
 - [`exploit.c`](http://www.cis.syr.edu/~wedu/seed/Labs_12.04/Software/Buffer_Overflow/files/exploit.c)
 
 # Tips
+
+- You may want to install a plugin for the GDB debugger to assist you. You may want to try `peda`
+
+		cd ~/
+		git clone https://github.com/longld/peda.git ~/bin/peda
+		echo 'source ~/bin/peda/peda.py' | sudo tee --append ~/.gdbinit > /dev/null
+
+- Before trying to inject shellcode of SEED Labs, start by the simpler exercises 
