@@ -19,4 +19,4 @@ Needed Files (4):
 		git clone https://github.com/longld/peda.git ~/bin/peda
 		echo 'source ~/bin/peda/peda.py' | sudo tee --append ~/.gdbinit > /dev/null
 
-- Before trying to inject shellcode of SEED Labs, start by the simpler exercises 
+- Before trying to inject shellcode of SEED Labs, start by the simpler exercises `0-simple`, `1-match`, etc. You may want to use the guide [`bo-guide.pdf`](bo-guide.pdf).
