@@ -1,0 +1,6 @@
+*.aux
+*.log
+*.gz
+*~
+.DS_Store
+*.lb

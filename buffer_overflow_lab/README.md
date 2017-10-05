@@ -33,12 +33,14 @@ Needed Files (4):
 
 		echo 0 | sudo tee /proc/sys/kernel/randomize_va_space
 
+ - Are you getting `0xXXYYZZWW` instead of `0xWWZZYYXX`? Recall big and little-endian.
+
 - ***Notice*** that solutions differ according to the architectures.
 
 ## Shell-code
 
-- File `test_shellcode.c` has some examples of shellcode.
+- File `test_shellcode-32.c` has some examples of shellcode.
 You can test them by uncommenting the corresponding line and compiling as
 
-		gcc test-shellcode.c -o test-shellcode -fno-stack-protector -z execstack; ./test-shellcode
+		gcc test-shellcode-32.c -o test-shellcode -fno-stack-protector -z execstack; chmod 4755 test-shellcode; ./test-shellcode
 
