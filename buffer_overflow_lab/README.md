@@ -2,7 +2,7 @@
 
 This lab is part of the [SEED Labs](http://www.cis.syr.edu/~wedu/seed/). 
 
-Refer to the [lab webpage](http://www.cis.syr.edu/~wedu/seed/Labs_12.04/Software/Buffer_Overflow/) for full details.
+Refer to the [lab webpage](http://www.cis.syr.edu/~wedu/seed/Labs_12.04/Software/Buffer_Overflow/) for full details. In the end of this lab session you are supposed to complete Task~1.
 
 Needed Files (4): 
 
@@ -10,6 +10,9 @@ Needed Files (4):
 - [`stack.c`](http://www.cis.syr.edu/~wedu/seed/Labs_12.04/Software/Buffer_Overflow/files/stack.c)
 - [`call_shellcode.sh`](http://www.cis.syr.edu/~wedu/seed/Labs_12.04/Software/Buffer_Overflow/files/call_shellcode.c)
 - [`exploit.c`](http://www.cis.syr.edu/~wedu/seed/Labs_12.04/Software/Buffer_Overflow/files/exploit.c)
+
+		* Notes1: in `call_shellcode.c` the include of `string.h` is missing; 
+		* Notes2: in `stack.c` the buffer must be 32 bytes instead of 24
 
 # Tips
 

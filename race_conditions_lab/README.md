@@ -1,8 +1,8 @@
 # Race-Condition Vulnerability Lab
 
-This lab is part of the [SEED Labs](http://www.cis.syr.edu/~wedu/seed/). 
+This lab is part of the [SEED Labs](http://www.cis.syr.edu/~wedu/seed/).
 
-Refer to the [lab webpage](http://www.cis.syr.edu/~wedu/seed/Labs_12.04/Software/Race_Condition/) for full details.
+Refer to the [lab webpage](http://www.cis.syr.edu/~wedu/seed/Labs_12.04/Software/Race_Condition/) for full details. You are supposed to complete Task~1.
 
 Needed Files (3): 
 
