@@ -8,8 +8,8 @@ Refer to the [lab webpage](http://www.cis.syr.edu/~wedu/seed/Labs_12.04/Software
 Needed Files (4): 
 
 - [Description of simple exercises](bo-guide.pdf)
-- Simple exercises `0-simple.c` ... `7-environment.c`
-- [Description](http://www.cis.syr.edu/~wedu/seed/Labs_12.04/Software/Buffer_Overflow/Buffer_Overflow.pdf)
+- Simple exercises `0-simple.c` to `7-environment.c`
+- [Description of SEED Labs BO lab](http://www.cis.syr.edu/~wedu/seed/Labs_12.04/Software/Buffer_Overflow/Buffer_Overflow.pdf)
 - [`stack.c`](http://www.cis.syr.edu/~wedu/seed/Labs_12.04/Software/Buffer_Overflow/files/stack.c)
 - [`call_shellcode.sh`](http://www.cis.syr.edu/~wedu/seed/Labs_12.04/Software/Buffer_Overflow/files/call_shellcode.c)
 - [`exploit.c`](http://www.cis.syr.edu/~wedu/seed/Labs_12.04/Software/Buffer_Overflow/files/exploit.c)
@@ -25,7 +25,7 @@ Needed Files (4):
 		git clone https://github.com/longld/peda.git ~/bin/peda
 		echo 'source ~/bin/peda/peda.py' | sudo tee --append ~/.gdbinit > /dev/null
 
-- Before trying to inject shellcode of SEED Labs, you may want to start with the basic exploit exercises `0-simple.c` until `7-environment.c`. These go from simple buffer-overflow, to change return addresses, redirect control-flow, shell-code injection, and exploitation of environment variables. Look at the file [`bo-guide.pdf`](bo-guide.pdf) for tips and instructions.
+- Before trying to inject shellcode of the SEED Labs, you may want to start with the basic exploit exercises `0-simple.c` until `7-environment.c`. These go from simple buffer-overflow, to change return addresses, redirect control-flow, shell-code injection, and exploitation of environment variables. Look at the file [`bo-guide.pdf`](bo-guide.pdf) for tips and instructions.
 
 - Notice that some of these files need to be compiled with `-fno-stack-protector` and others with `-z execstack`. This info is at the header of each source file.
 
