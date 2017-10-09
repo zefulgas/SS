@@ -29,21 +29,21 @@ Needed Files (4):
 
 Compilation info is at the header of each source file.
 
-- Start with exercise [`0.read.c`](0-read.c). Compile it and notice that in this case you cannot do a buffer overflow as `buffer` is located __below__ the other variables. In fact `secret_message` is even in a different memory segment. 
+0. Start with exercise [`0.read.c`](0-read.c). Compile it and notice that in this case you cannot do a buffer overflow as `buffer` is located __below__ the other variables. In fact `secret_message` is even in a different memory segment. 
 
 	* Can you still read `secret_number`? 
 	* And `secret_message`? 
 
 The `printf`s are there just to help you and you should be able to get these values in some other way.
 
-- And if you have a shorter buffer of 12-bytes? Can you still read ___both___ these values? Try it with [`1-short-read.c`](1-short-read.c)
+1. And if you have a shorter buffer of 12-bytes? Can you still read ___both___ these values? Try it with [`1-short-read.c`](1-short-read.c)
 
-- Function `printf` also allows you to write on variables using the format string `%n`.
+2. Function `printf` also allows you to write on variables using the format string `%n`.
 
 	* Can you change the value of `integrity_number` in [`2-write.c`](2-write.c)?
 	* Can you change it to `100`?
 	* Can you change the `integrity_message` to `A`?
 
-- [`3-functions.c`](3-functions.c) looks like buffer-overflow again but in this case `buffer` is located __below__ `fp`. Can you still win the game?
+3. [`3-functions.c`](3-functions.c) looks like buffer-overflow again but in this case `buffer` is located __below__ `fp`. Can you still win the game?
 
-- And what about [`4-return.c`](4-return.c)? Can you still win the game **even** with stack protection enabled?
+4. And what about [`4-return.c`](4-return.c)? Can you still win the game **even** with stack protection enabled?
