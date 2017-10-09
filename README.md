@@ -16,4 +16,5 @@ All labs should be executed in the virtual machine (VM) provided by the SEED Lab
 
 * Lab 2: [Buffer-Overflow Vulnerability Lab](buffer_overflow_lab).
 
+* Lab 3: [Format Strings Vulnerability Lab](format_strings_lab).
 
